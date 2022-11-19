@@ -28,14 +28,21 @@
 	//타이머 시작시 글을 표시하는 함수
 	function timer() {
 
-		let startTime = new Date("2022-11-19 13:33:40");		//시작시간 지정
+		let startTime = new Date();		//시작시간 지정
+		// startTime.setFullYear(2022);		//년도
+		// startTime.setMonth(10);			//월 0~11(1~12월)
+		// startTime.setDate(20);			//일
+		startTime.setHours(8);			//시간
+		startTime.setMinutes(0);			//분
+		startTime.setSeconds(0);			//초
+
 		let endTime = new Date();		//종료일 지정
-		endTime.setFullYear(2022);		//년도
-		endTime.setMonth(10);			//월 0~11(1~12월)
-		endTime.setDate(19);			//일
-		endTime.setHours(14);			//시간
-		endTime.setMinutes(30);			//분
-		endTime.setSeconds(00);			//초
+		// endTime.setFullYear(2022);		//년도
+		// endTime.setMonth(10);			//월 0~11(1~12월)
+		// endTime.setDate(20);			//일
+		endTime.setHours(19);			//시간
+		endTime.setMinutes(0);			//분
+		endTime.setSeconds(0);			//초
 
 		let timer = endTime.getTime();
 		let now = new Date();				//현재시간
